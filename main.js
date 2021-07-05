@@ -22,7 +22,6 @@ function shuffleNamesArray(names) {
         names[i] = names[randIndex]
         names[randIndex] = temp
     }
-  
     return names;
 }
 
@@ -35,8 +34,10 @@ function shuffleNamesArray(names) {
  * The first time this button is hit, it should display the first name on the list.
  * If the last person on the list has been picked, display the message 'Please Shuffle Class!'
  */
-function getNextUp() {
+function getNextUp(names) {
     console.log('get next up was clicked!')
+    let classNames = document.getElementById('fellow-names').value
+    
 }
 
 /**
@@ -48,4 +49,6 @@ function getNextUp() {
  */
 function shuffleClass() {
     console.log('shuffle class was clicked!')
+
 }
+
